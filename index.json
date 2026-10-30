@@ -1,0 +1,362 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Video & Image Generation (curated)",
+    "zh": "视频 / 图像生成精选"
+  },
+  "description": {
+    "en": "A hand-curated DSH market containing only video- and image-generation plugins. Every version is pinned to a fixed Git commit. Entries are sorted by GitHub stars, and each one carries a 'free' or 'byok' label: 'free' means the plugin installs and runs without a paid subscription (local engine, self-hosted backend, or a provider's free tier), 'byok' means you must supply your own paid API key. Third-party content — review before installing.",
+    "zh": "手工维护的 DSH 插件市场，只收录视频与图像生成类插件。每个版本都锁定到具体的 Git 提交，按 GitHub 星标排序，并标注「free（免费）」或「byok（需自备 Key）」：free 表示安装后无需付费订阅即可运行（本地引擎、自建后端或厂商免费额度），byok 表示必须自备付费 API Key。第三方内容，安装前请自行确认。"
+  },
+  "metadata": {
+    "categories": {
+      "video": {
+        "title": {
+          "en": "Video generation",
+          "zh": "视频生成"
+        }
+      },
+      "image": {
+        "title": {
+          "en": "Image generation",
+          "zh": "图像生成"
+        }
+      },
+      "studio": {
+        "title": {
+          "en": "Studio / workflow",
+          "zh": "工作台 / 流水线"
+        }
+      }
+    },
+    "labels": {
+      "free": {
+        "title": {
+          "en": "Free to run",
+          "zh": "免费可用"
+        }
+      },
+      "byok": {
+        "title": {
+          "en": "Bring your own key",
+          "zh": "需自备 API Key"
+        }
+      },
+      "video": {
+        "title": {
+          "en": "Video",
+          "zh": "视频"
+        }
+      },
+      "image": {
+        "title": {
+          "en": "Image",
+          "zh": "图像"
+        }
+      },
+      "local": {
+        "title": {
+          "en": "Local engine",
+          "zh": "本地引擎"
+        }
+      },
+      "cloud-api": {
+        "title": {
+          "en": "Cloud API",
+          "zh": "云端 API"
+        }
+      }
+    },
+    "sortKeys": {
+      "stars": {
+        "title": {
+          "en": "GitHub stars",
+          "zh": "GitHub 星标"
+        },
+        "order": "desc"
+      },
+      "rank": {
+        "title": {
+          "en": "Curated rank",
+          "zh": "精选序号"
+        },
+        "order": "asc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-image-gen",
+      "title": {
+        "en": "dsh-image-gen",
+        "zh": "多供应商生图"
+      },
+      "description": {
+        "en": "Multi-provider image generation — Gemini, OpenAI, Seedream and DashScope, plus a local ComfyUI channel. Ships a canvas and a settings page.",
+        "zh": "多供应商图像生成：Gemini、OpenAI、Seedream、通义万相，另可直接接本地 ComfyUI；带画布与设置页。"
+      },
+      "author": "shanliuling",
+      "homepage": "https://github.com/shanliuling/dsh-image-gen",
+      "repository": {
+        "url": "https://github.com/shanliuling/dsh-image-gen"
+      },
+      "metadata": {
+        "category": "image",
+        "labels": [
+          "image",
+          "free",
+          "local"
+        ],
+        "sortKeys": {
+          "stars": 851,
+          "rank": 1
+        }
+      },
+      "versions": [
+        {
+          "version": "0.10.0",
+          "publishTimestamp": 1793183209,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanliuling/dsh-image-gen",
+            "commit": "5c8c14143f7f4b707b6bb88a068a365feb2f128e"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-oil-creator",
+      "title": {
+        "en": "dsh-oil-creator",
+        "zh": "本地视频创作台"
+      },
+      "description": {
+        "en": "Local creator workbench for video: keeps a project, its assets and its finishing steps as plain folders on disk.",
+        "zh": "本地视频创作工作台：把一个视频项目的素材、素材库与成片流程都放在磁盘文件夹里管理。"
+      },
+      "author": "oil-oil",
+      "homepage": "https://github.com/oil-oil/dsh-oil-creator",
+      "repository": {
+        "url": "https://github.com/oil-oil/dsh-oil-creator"
+      },
+      "metadata": {
+        "category": "studio",
+        "labels": [
+          "video",
+          "free",
+          "local"
+        ],
+        "sortKeys": {
+          "stars": 206,
+          "rank": 2
+        }
+      },
+      "versions": [
+        {
+          "version": "0.2.1",
+          "publishTimestamp": 1791602391,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/oil-oil/dsh-oil-creator",
+            "commit": "58bd30d0d05b04e149552e8bdb4ff0becae614f0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@q253595422/dsh-imagegen-video",
+      "title": {
+        "en": "dsh-imagegen-video",
+        "zh": "图视频一体工作台"
+      },
+      "description": {
+        "en": "Image plus video studio: text/image-to-image, text/image-to-video, first/last keyframes, storyboard, and clip stitching into one MP4.",
+        "zh": "图 + 视频一体工作台：文生图/图生图、文生视频/图生视频、首尾关键帧、分镜逐镜出片，还能把多个片段拼成一个 MP4。"
+      },
+      "author": "q253595422",
+      "homepage": "https://github.com/q253595422/dsh-imagegen-video",
+      "repository": {
+        "url": "https://github.com/q253595422/dsh-imagegen-video"
+      },
+      "metadata": {
+        "category": "video",
+        "labels": [
+          "video",
+          "byok",
+          "image"
+        ],
+        "sortKeys": {
+          "stars": 66,
+          "rank": 3
+        }
+      },
+      "versions": [
+        {
+          "version": "1.19.0",
+          "publishTimestamp": 1793321405,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/q253595422/dsh-imagegen-video",
+            "commit": "6a3309b24f6ee6dc5f50fc19a5068bc2b5f94f57"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-guide-dog",
+      "title": {
+        "en": "dsh-guide-dog",
+        "zh": "MiniMax 多模态"
+      },
+      "description": {
+        "en": "MiniMax multimodal bundle: image, video, music and speech generation, vision inspection tools, voice input and a real-time voice call mode.",
+        "zh": "MiniMax 全家桶：图/视频/音乐/语音生成，加视觉检查工具、麦克风语音输入与实时语音通话模式。"
+      },
+      "author": "AtropinolTT",
+      "homepage": "https://github.com/AtropinolTT/dsh-guide-dog",
+      "repository": {
+        "url": "https://github.com/AtropinolTT/dsh-guide-dog"
+      },
+      "metadata": {
+        "category": "video",
+        "labels": [
+          "video",
+          "byok",
+          "image"
+        ],
+        "sortKeys": {
+          "stars": 5,
+          "rank": 4
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1786983290,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/AtropinolTT/dsh-guide-dog",
+            "commit": "fbd3a0584609722052710978214f8edceeb458a2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-media-gen",
+      "title": {
+        "en": "dsh-media-gen",
+        "zh": "生图生视频整合"
+      },
+      "description": {
+        "en": "Unified image and video generation across OpenAI-compatible gateways, DashScope, Seedance, Veo and Sora-style async /v1/videos jobs, with a settings page and gallery.",
+        "zh": "生图 + 生视频整合：OpenAI 兼容网关、通义万相、火山 Seedance、Google Veo，以及 Sora 风格的异步 /v1/videos 任务（含图生视频），带设置页和画廊。"
+      },
+      "author": "EmberwingAviation",
+      "homepage": "https://github.com/EmberwingAviation/dsh-media-gen",
+      "repository": {
+        "url": "https://github.com/EmberwingAviation/dsh-media-gen"
+      },
+      "metadata": {
+        "category": "video",
+        "labels": [
+          "video",
+          "byok",
+          "image"
+        ],
+        "sortKeys": {
+          "stars": 5,
+          "rank": 5
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.4",
+          "publishTimestamp": 1792250560,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/EmberwingAviation/dsh-media-gen",
+            "commit": "bc1ef69b69979b39bc765a1c01a22fbf38d9660d"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@ninkch/dsh-infinite-canvas",
+      "title": {
+        "en": "dsh-infinite-canvas",
+        "zh": "无限画布工作室"
+      },
+      "description": {
+        "en": "Node-based studio that walks script, multi-shot storyboard, reference-consistent assets, one-shot generation and the final cut — with a director-first preset for short drama.",
+        "zh": "节点式工作室：剧本 → 多镜头分镜 → 角色一致的素材 → 逐镜生成 → 终剪；内置「媒体创作」导演第一视角预设，适合短剧。"
+      },
+      "author": "NINKCH",
+      "homepage": "https://github.com/NINKCH/dsh-infinite_canvas",
+      "repository": {
+        "url": "https://github.com/NINKCH/dsh-infinite_canvas"
+      },
+      "metadata": {
+        "category": "studio",
+        "labels": [
+          "video",
+          "byok",
+          "image"
+        ],
+        "sortKeys": {
+          "stars": 4,
+          "rank": 6
+        }
+      },
+      "versions": [
+        {
+          "version": "0.19.12",
+          "publishTimestamp": 1793268087,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/NINKCH/dsh-infinite_canvas",
+            "commit": "2742e7acb0ec4ee2bb32c7b649d4e6168c2760fa"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-agnes-media",
+      "title": {
+        "en": "dsh-plugin-agnes-media",
+        "zh": "Agnes 图像视频"
+      },
+      "description": {
+        "en": "Agnes AI image and asynchronous video tasks: text-to-image, image-to-image and multi-image composition. The API key resolves from the DSH credentials domain, never from plugin source.",
+        "zh": "Agnes AI 的图像与异步视频任务：文生图、图生图、多图合成；API Key 从 DSH 凭据域读取，不写在插件源码里。"
+      },
+      "author": "valing1837",
+      "homepage": "https://github.com/valing1837/dsh-plugin-agnes-media",
+      "repository": {
+        "url": "https://github.com/valing1837/dsh-plugin-agnes-media"
+      },
+      "metadata": {
+        "category": "video",
+        "labels": [
+          "video",
+          "byok",
+          "image"
+        ],
+        "sortKeys": {
+          "stars": 0,
+          "rank": 7
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1791178625,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/valing1837/dsh-plugin-agnes-media",
+            "commit": "c3a0684b11fdc8372ab32c835ddc5155b4fbb69f"
+          }
+        }
+      ]
+    }
+  ]
+}
